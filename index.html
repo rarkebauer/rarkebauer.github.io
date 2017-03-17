@@ -1,123 +1,172 @@
 <!DOCTYPE html>
 <head>
-<script src="program.js"></script>
+<!--<script type="text/javascript" src="program.js"></script>-->
+<!--<script src="program.js"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <script src="https://use.fontawesome.com/4bc2f3e355.js"></script>
+
 <style>
-body {
-  font-family: helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 600px;
-  background: #232323;
+.align-right{
+  text-align: right;
+  padding-right: 10px;
+} 
+.crimson-text{
+  font-family: 'Crimson Text', serif;
 }
-div {
-  height: 200px;
-  background-size: cover;
+#raa{
+  font-size: 28px;
+  margin-top: 8px;
+}
+a{
+  text-decoration: none;
+}
+#about {
+  width: 100%;
   position: relative;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
+  top: 50px;
+  background: #aabbdd;
+  height: 400px;
 }
-h1 {
-  font-family: 'Varela', cursive;
+#portfolio{
+  width: 100%;
+  position: relative;
+  top: 0px;
+  background: #66bbdd;
+  height: 1010px;
+}
+#contact{
+  width: 100%;
+  position: relative;
+  background: #ebebeb;
+  height: 200px;
   text-align: center;
-  font-size: 75px;
-  color: #aaaaaa;
-  margin: 60px 0 0 0;
 }
-h2 {
+#looking_at_ocean{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 100%;
+    float: right;
+    margin: 50px;
+    
+}
+#bio{
+  font-size: 30px;
+  color: white;
+  font-family: 'Crimson-text';
+  float: left;
+  margin: 100px;
+}
+
+h1{
+  font-family: Crimson-text;
   text-align: center;
-  color: #bbbbbb;
-  margin: 0px 0 70px 0;
-}
-p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  color:  #696969;
   padding: 10px;
-  line-height: 28px;
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 30px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
 }
-
-small {
-  opacity: 0;
+.row{
+  margin: 0 auto;
 }
-
-.show-description p {
-  height: 150px;
+h6{
+  font-family: Crimson-text;
+  text-align: center;
+  color:  #696969;
 }
-
-.show-description small {
-  opacity: 1;
-}
-
-.first{
-  background-image: url("http://edu.stemjobs.com/wp-content/uploads/2015/05/coding.jpg");
-}
-.second{
-  background-image: url("http://img.wennermedia.com/article-leads-horizontal/rs-11089-20130523-chance-the-rapper-624x420-1369339791.jpg");
-}
-.dessert{
-  background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
-}
-.price {
-  float: right;
-}
-@media (max-width: 500px) {
-  h1 {
-    font-size: 50px;
-    margin-top: 20px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-  }
-  div {
-    margin: 20px 12px 0 12px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  small {
-    font-size: 16px;
-  }
+#contact-words{
+  margin: -20px;
 }
 
 </style>
 
 </head>
 
+
 <body>
-<h1>Rachet's interests</h1>
-<h2>an autobiography</h2>
-<div class="first">
-  <p>coding <span class="price">on some mr robot shit</span><br />
-  <small>When I wake up in the morning I like to drink coffee and learn about coding. Mr. Robot made me do it</small></p>
-</div>
-
-<div class="second">
-  <p>music <span class="price">headphones</span><br />
-  <small>Chance gets me every time on that stupid kitkat commercial but coloring book still isn't as good as acid rap</small></p>
-</div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-nav crimson-text" href="#" id="raa">Rachel Arkebauer</a>
+      <ul class="nav navbar-nav navbar-right align-right">
+        <li>
+         <p class="navbar-btn">
+           
+        <a href="#about"><button type="button" class="btn btn-default navbar-btn crimson-text">About</button></a>
+        <a href="#portfolio"><button type="button" class="btn btn-default navbar-btn crimson-text">Portfolio</button></a> 
+      
+        <a href="#contact"><button type="button" class="btn btn-default navbar-btn crimson-text">Contact</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   
-<div class="dessert">
-  <p>baking <span class="price">martha stewart</span><br />
-  <small>I can't wait for the new snoop dogg and martha stewart cooking show. Those two have some special chemistry</small></p>
+ <div id="about">
+   <div class="row">
+     <div class="col-md-8" "col-sm-12">
+      <p id="bio">Self-taught web developer familiar with HTML5, CSS3, Javascript, and jQuery. I'm learning and improving my skills every day.</p>
+     </div>
+     <div class="col-md-4" "col-sm-12">
+   <img src="http://res.cloudinary.com/dcqzwc6gu/image/upload/v1484604328/12794750_10153284791841059_1332526467823054534_o_fash9a.jpg" id="looking_at_ocean">
+     </div>
+   </div>
+ </div>
+  
+ <div id="portfolio">
+   <h1>Portfolio</h1>
+   <!--Thumbnail-->
+   <div class = "row">
+   
+   <div class = "col-xs-12 col-sm-6 col-md-4">
+      <a href = "https://codepen.io/rarkebauer/full/mRrBRw/" class = "thumbnail" target="_blank">
+         <img src = "http://res.cloudinary.com/dcqzwc6gu/image/upload/v1484678486/Screen_Shot_2017-01-17_at_1.40.48_PM_umxsb3.png">
+      </a>
+       <p>Tribute page to Frank Ocean. Link <a href="https://codepen.io/rarkebauer/full/mRrBRw/" target="_blank">here</a></p>
+   </div>
+   
+   <div class = "col-xs-12 col-sm-6 col-md-4">
+      <a href = "http://codepen.io/rarkebauer/full/ygXvVa/" class = "thumbnail" target="_blank">
+         <img src = "http://res.cloudinary.com/dcqzwc6gu/image/upload/c_scale,h_1104,w_1934/v1485522233/Screen_Shot_2017-01-27_at_8.02.42_AM_mv7pvr.png">
+      </a>
+     <p>Get random design quotes. Link <a href="http://codepen.io/rarkebauer/full/ygXvVa/" target="_blank">here</a> </p>
+   </div>
+   
+   <div class = "col-xs-12 col-sm-6 col-md-4">
+      <a href = "http://codepen.io/rarkebauer/full/rjYaKg/" class = "thumbnail" target="_blank">
+         <img src = "http://res.cloudinary.com/dcqzwc6gu/image/upload/c_scale,h_1104,w_1934/v1486164741/Screen_Shot_2017-02-03_at_6.28.28_PM_vib1ji.png" alt = "Temperature and location app">
+      </a>
+     <p>Check out the temperature for your location. Link <a href="http://codepen.io/rarkebauer/full/rjYaKg/" target="_blank">here</a> </p>
+   </div>
+   
+   <div class = "col-xs-12 col-sm-6 col-md-4">
+      <a href = "http://codepen.io/rarkebauer/full/dNKpxg/" class = "thumbnail" target="_blank">
+         <img src = "http://res.cloudinary.com/dcqzwc6gu/image/upload/c_scale,h_1104,w_1934/v1486860062/wiki_viewer_cap_pcuyaj.png" alt = "Generic placeholder thumbnail">
+      </a>
+      <p>Search articles on Wikipedia. Link <a href="http://codepen.io/rarkebauer/full/dNKpxg/" target="_blank">here</a> </p>
+     
+   </div>
+    <div class = "col-xs-12 col-sm-6 col-md-4">
+      <a href = "http://codepen.io/rarkebauer/full/apMaVY/" class = "thumbnail" target="_blank">
+         <img src = "http://res.cloudinary.com/dcqzwc6gu/image/upload/c_scale,h_1104,w_1934/v1487853920/twitch2_pqgieg.png">
+      </a>
+      <p>View which Twitch.tv streams are currently live. Link <a href="http://codepen.io/rarkebauer/full/apMaVY/" target="_blank">here</a> </p>
+   </div>    
+   
 </div>
 
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
-</script>
-
+ </div>
+ <div id="contact">
+   <div id="contact-words">
+   <h1>Find me here</h1>
+   <a href="https://github.com/rarkebauer" class="btn btn-inverse" role="button" target="_blank"><i class="fa fa-github fa-5x" aria-hidden="true"></i>
+   </a>
+   <a href="mailto:rarkebauer@gmail.com" class="btn btn-primary" role="button" target="_blank"><i class="glyphicon glyphicon-envelope glyphicon-5x" aria-hidden="true"></i>
+</a>
+   <a href="https://www.freecodecamp.com/rarkebauer" class="btn btn-inverse" role="button" target="_blank"><i class="fa fa-free-code-camp fa-5x" aria-hidden="true"></i>
+</a>
+   <h6> &lt Rachel Arkebauer 2017/&gt</h6>
+   </div>
+ </div>
+  
+  
 </body>
