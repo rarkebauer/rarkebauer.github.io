@@ -26,10 +26,8 @@ a{
 #headshot{
     width: 100%;
     height: auto;
-    /*max-width: 350px; */
     border-radius:  0%;
     float: right;
-    /*margin: 50px;*/
 }
 #bio{
   font-size: 40px;
